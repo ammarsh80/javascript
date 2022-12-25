@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    height: auto;
+}
+
+.containerListe,
+.containerPanier {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p,
+li {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.liste,
+.panier {
+    width: 300px;
+    height: auto;
+    border: 3px dashed black;
+
+}
+
+.panier {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.panier p {
+    margin: 5px 0px 5px 20px;
+}
+
+.panier div {
+    color: rgb(148, 121, 121);
+    font-size: 2.5em;
+    margin: 5px 0px 5px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.prix{
+    color: rgb(148, 121, 121);
+    font-size: 1em;
+}

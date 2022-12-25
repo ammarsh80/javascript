@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #Div1 {
+        background-color: grey;
+        border: 1px solid;
+        padding: 50px;
+      }
+      #Div2 {
+        background-color: yellow;
+        border: 1px solid;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Div1">
+      <a id="Div2" href="https://needemand.com">cliquer</a>
+    </div>
+    <script type="text/javascript">
+      document.querySelector("#Div1").addEventListener("click", function () {
+        alert("div1");
+      });
+      document.querySelector("#Div2").addEventListener("click", function () {
+        alert("div2");
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

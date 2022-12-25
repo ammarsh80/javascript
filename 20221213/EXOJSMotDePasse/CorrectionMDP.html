@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parite</title>
+  </head>
+
+  <body>
+    <script>
+      // function exo5() {
+      //   console.log(force("1235HelloWorld*!"));
+      // }
+
+      function force(mdp) {
+        // La Longueur
+        let l = mdp.length;
+        // Le nombre de caractères
+        let n = alphabet(mdp);
+        // Appliquer la formule
+        let force = l * Math.log2(n);
+        return Math.round(force);
+      }
+
+      function alphabet(mdp) {
+        n = 0;
+        if (mdp.match(/[0-9]/)) {
+          n += 10;
+        }
+        if (mdp.match(/[a-z]/)) {
+          n += 26;
+        }
+        if (mdp.match(/[A-Z]/)) {
+          n += 26;
+        }
+        if (mdp.match(/[!#$*%_?\\]/)) {
+          n += 8;
+        }
+        return n;
+      }
+
+      function saisi_mdp() {
+        let mdp;
+        let f;
+        do {
+          mdp = prompt("Mot de passe ?");
+          f = force(mdp);
+          console.log("force du mot de passe : " + f);
+        } while (f <= 104);
+        console.log("Succes : ");
+      }
+      // seconde partie de l'exo a décommenter au besoin
+      saisi_mdp();
+    </script>
+  </body>
+</html>

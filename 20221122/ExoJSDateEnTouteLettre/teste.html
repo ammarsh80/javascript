@@ -1,0 +1,81 @@
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>propriétés et méthodes de Date</title>
+    <script>
+      aujourdhui = new Date();
+      nombrejour = aujourdhui.getDay();
+      // if (nombrejour < 10) {
+      //   nombrejour = "0" + nombrejour;
+      // }
+      jour = aujourdhui.getDate();
+      mois = aujourdhui.getMonth() + 1;
+      annee = aujourdhui.getFullYear();
+      switch (nombrejour) {
+        case 1:
+          nomjour = "lundi";
+          break;
+        case 2:
+          nomjour = "mardi";
+          break;
+        case 3:
+          nomjour = "mercredi";
+          break;
+        case 4:
+          nomjour = "jeudi";
+          break;
+        case 5:
+          nomjour = "vendredi";
+          break;
+        case 6:
+          nomjour = "samedi";
+          break;
+        case 7:
+          nomjour = "dimanche";
+          break;
+      }
+      switch (mois) {
+        case 1:
+          nomois = "janvier";
+          break;
+        case 2:
+          nomois = "février";
+          break;
+        case 3:
+          nomois = "mars";
+          break;
+        case 4:
+          nomois = "avril";
+          break;
+        case 5:
+          nomois = "mai";
+          break;
+        case 6:
+          nomois = "juin";
+          break;
+        case 7:
+          nomois = "juillet";
+          break;
+        case 8:
+          nomois = "août";
+          break;
+        case 9:
+          nomois = "septembre";
+          break;
+        case 10:
+          nomois = "octobre";
+          break;
+        case 11:
+          nomois = "novembre";
+          break;
+        case 12:
+          nomois = "décembre";
+          break;
+      }
+      alert(
+        "Nous sommes le " + nomjour + " " + jour + " " + nomois + " " + annee
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

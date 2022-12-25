@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ td  {
+    text-align: center;
+    padding: 10px;
+    border-left: 2px dashed #000;
+    border-right: 2px dashed #000;
+}
+
+/* th {
+    display: none;
+    border-bottom: 1px dashed;
+} */
+
+tr:nth-of-type(1){
+    border-bottom: 1px dashed;
+
+}

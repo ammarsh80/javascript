@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Verification de type de fichier upload</title>
+    <script>
+      function controler() {
+        var name = document.form1.fileup.value;
+        var longueur = name.length;
+        ext = longueur - 3;
+        extension = name.substr(ext, 3);
+        if (extension == "gif" || extension == "jpg") {
+          alert("OK");
+        } else {
+          alert("Désolé ! Ce type de fichier ne peut pas être transféré");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="form1" id="form1">
+      Fichier à envoyer:
+      <input type="file" name="fileup" />
+      <input type="button" value="Envoyer" onClick="controler ()" />
+      <br />
+    </form>
+  </body>
+</html>

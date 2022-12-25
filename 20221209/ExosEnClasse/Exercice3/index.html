@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <table border="1">
+                <tr>
+                    <td>couleur de fond (rgb)</td>
+                    <td>
+                        0<input type="range" min="0" max="255" step="5" class="slider" name="color" oninput="update()"
+                            value="0" />255
+                    </td>
+                    <td rowspan="6" width="400" align="center">
+                        <p id="carre">Titre de test</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>
+                        0<input type="range" name="padding" min="0" max="30" step="5" class="slider" oninput="update()"
+                            value="0" />30
+                    </td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>
+                        0<input type="range" min="5" max="200" name="height" step="40" value="0" class="slider"
+                            oninput="update()" />200
+                    </td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>
+                        0<input type="range" min="5" max="200" name="width" step="50" value="0" class="slider"
+                            oninput="update()" />200
+                    </td>
+                </tr>
+                <tr>
+                    <td>arrondi</td>
+                    <td>
+                        0<input type="range" min="5" max="30" name="radius" step="5" value="0" class="slider"
+                            oninput="update()" />30
+                    </td>
+                </tr>
+                <tr>
+                    <td>rotation</td>
+                    <td>
+                        0<input type="range" min="5" max="180" name="rotation" step="5" value="0" class="slider"
+                            oninput="update()" />180
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <div id="control">
+            <p>couleur de fond (rgb)</p>
+           <div> 0 <input type="range" id="color" name="points" min="0" max="255"> 255</div>
+            <p>padding</p>
+            <div> 0 <input type="range" id="padding" name="points" min="0" max="30"> 30</div>
+            <p>height</p>
+            <div> 0 <input type="range" id="height" name="points" min="0" max="200"> 200</div>
+            <p>width</p>
+            <div> 0 <input type="range" id="width" name="points" min="0" max="200"> 200</div>
+            <p>arrondi</p>
+            <div>  0 <input type="range" id="arrondi" name="points" min="0" max="30"> 30</div>
+            <p>rotation</p>
+            <div> 0 <input type="range" id="rotation" name="points" min="0" max="180"> 180</div>
+
+        </div>
+        <dir id="titre"><h1>Titre de teste</h1></dir> -->
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
